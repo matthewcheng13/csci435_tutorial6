@@ -23,7 +23,11 @@ function App({ login }){
     if(!data) return null;
 
       return <div>
-        
+        <h1>{data.name}</h1>
+        <p>{data.location}</p>
+        <p>{"My Github PFP"}</p>
+        <img alt={data.login} src={data.avatar_url}/>
+        <p>{data.website}</p>
       </div>
 
 }
